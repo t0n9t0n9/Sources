@@ -29,8 +29,10 @@ if [ $ANSWER_NEW = "copy_right" ];then
 	ls $destation_path
 	echo -e "\033[32m git check \033[0m "
 	cd /root/github/Sources && git status
+	read  sources
+	echo $sources
 	echo -e "\033[32m git add sources  \033[0m"
-	cd /root/github/Sources && git add $updating_path
+	cd /root/github/Sources && git commit -a 
 	echo -e "\033[32m git commit \033[0m "
 	cd $destation_path && git commit -m "$updating_path"
 	echo -e "\033[32m git push \033[0m "
