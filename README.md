@@ -1,4 +1,4 @@
-#soft_download
+#softdownload
 #This is a shell script,and download software automaticly.
-#web.html
+#web
 #This is a web-html,and it include web url
